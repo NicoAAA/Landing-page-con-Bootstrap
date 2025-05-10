@@ -1,0 +1,46 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ff0000;
+}
+
+/* 1. Definimos el grid en el contenedor */
+.container {
+    display: grid;
+    /* activa el modo Grid Layout */
+    grid-template-columns: auto 500px 50px 50px 50px;
+    grid-template-rows: auto auto auto;
+    /* 3 filas cuya altura se ajusta al contenido */
+
+    /* 2. Nombramos bloques de área para luego asignarlos fácilmente */
+    grid-template-areas:
+        "header header header header header"
+        "main   main   main   sidebar sidebar"
+        "footer footer footer footer footer";
+
+    gap: 10px;/* espacio entre filas/columnas */
+    background-color: lightseagreen;
+}
+
+/* 3. Asignamos a cada elemento hijo la zona que le corresponde */
+.item-a {
+    grid-area: header;
+    background-color: tan;
+}
+
+.item-b {
+    grid-area: main;
+    background-color: aqua;
+}
+
+.item-c {
+    grid-area: sidebar;
+    background-color: lightgreen;
+}
+
+.item-d {
+    grid-area: footer;
+    background-color: lightcoral;
+}
