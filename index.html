@@ -1,50 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esclavisalo</title>
-    <link rel="icon" href="assets/image/Alien Servant Icon_simple_.png" type="image/png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" href="assets/image/icons/Alien Servant Icon_simple_.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css"> <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets\image\icons\bootstrap-icons\bootstrap-icons.css">
 </head>
-<body>
-    <div class="container">
-        
-        <header class="item-a">
-           <nav
-            class="nav justify-content-center  "
-           >
-            <a class="nav-link active" href="#" aria-current="page"
-                >Active link</a
-            >
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link disabled" href="#">Disabled link</a>
-           </nav>
-           
-            
-        </header>
 
-        <main class="item-b">
-            <h3>¿Qué es Esclavisalo?</h3>
-            <p>Esclavisalo es un juego de rol de mesa donde los jugadores asumen el papel de alienígenas que han sido capturados y convertidos en esclavos por una</p>
-        </main>
+<body class="d-flex flex-column min-vh-100">
 
-         <aside class="item-c">
-            <h3>Barra Lateral (Sidebar)</h3>
-            <p>Contenido secundario o de navegación.</p>
-            <p>Ocupa la cuarta columna de la segunda fila.</p>
-        </aside>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-alien-first" href="#">
+                <img src="assets\image\icons\Alien Servant Icon_simple_.png" alt="Logo MCS" width="30" height="30"
+                    class="d-inline-block align-text-top me-2"> EsclavosMarcianos.com
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-alien-accent" aria-current="page" href="#hero">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Modelos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Adquisiciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">PFI (FAQ)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <footer class="item-d">
-            <p>Pie de Página (Footer)</p>
-            <p>Información de copyright, enlaces, etc.</p>
-            <p>Ocupa las primeras cuatro columnas de la tercera fila.</p>
-        </footer>
+    <header id="hero" class="py-5 text-center position-relative overflow-hidden">
+        <div class="video-background-container">
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="heroVideo">
+                <source src="assets/videos/MarcianoTrump.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+        </div>
 
-        <script src="js/bootstrap.bundle.min.js"></script>
-    </div>
-    
-    
-</body>
+        <div class="container overlay position-relative" style="z-index: 1;">
+            <div class="row py-lg-5">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <i class="bi bi-person-bounding-box" style="font-size: 5rem; color: var(--martian-red);"></i>
+                    <h1 class="display-3 fw-bold my-4">Unidades Alienígenas: La Cima de la Servidumbre Marciana</h1>
+                    <p class="lead mb-4">Descubre la eficiencia y lealtad de nuestra exclusiva gama de sirvientes
+                        intergalácticos. Optimizados para el entorno marciano. ¡Tu productividad se disparará a las
+                        estrellas!</p>
+                    <p>
+                        <a href="#features" class="btn btn-light btn-lg my-2">Ver Catálogo de Unidades</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg my-2 ms-md-2">Solicitar Consulta
+                            Personalizada</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5 text-alien-first">Nuestros Modelos <span class="text-alien-accent">Premium</span></h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100"> <img src="assets\image\aliens\Martian Drilling Alien.png" class="card-img-top image-feature"
+                            alt="Modelo Xylar">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Modelo "Xylar-7" - El Minero Incansable</h5>
+                            <p class="card-text">Especializado en extracción de regolito y perforación profunda. Opera
+                                20 horas terrestres sin recarga. Resistente a tormentas de polvo.</p>
+                            <a href="#" class="btn btn-outline-light mt-auto">Detalles y Especificaciones</a>
+                        </div>
+                        <div class="card-footer text-muted-light"> Disponibilidad: Inmediata. Unidades limitadas.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <img src="assets\image\aliens\Martian Alien Technician.png" class="card-img-top image-feature" alt="Modelo K'reel">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Modelo "K'Reel" - El Técnico Supervisor</h5>
+                            <p class="card-text">Mantenimiento de sistemas, diagnóstico avanzado y optimización de redes
+                                de energía. Interfaz neural directa con maquinaria.</p>
+                            <a href="#" class="btn btn-outline-light mt-auto">Detalles y Especificaciones</a>
+                        </div>
+                        <div class="card-footer text-muted-light"> Bajo pedido (Ciclo de ensamblaje: 30 soles)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-block mx-auto"> <div class="card h-100">
+                        <img src="assets\image\aliens\Martian Alien Housework.png" class="card-img-top image-feature" alt="Modelo Floopy">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Modelo "Floopy" - Asistente Personal Multi-tarea</h5>
+                            <p class="card-text">Servicio doméstico, preparación de alimentos sintéticos, cuidado de
+                                cultivos hidropónicos y entretenimiento básico. Programable en 700+ idiomas.</p>
+                            <a href="#" class="btn btn-outline-light mt-auto">Detalles y Especificaciones</a>
+                        </div>
+                        <div class="card-footer text-muted-light"> ¡Oferta de Lanzamiento! Incluye pack de idiomas.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-dark text-white flex-grow-1" data-bs-theme="dark">
+        <div class="container">
+            <h2 class="mb-4 text-center">Contáctanos</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <form action="#" method="post" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Por favor, ingresa tu nombre.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="tu@ejemplo.com" required>
+                                <div class="invalid-feedback">
+                                    Por favor, ingresa un correo electrónico válido.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="message" name="message" rows="4"
+                                    placeholder="¿Qué necesitas?" required></textarea>
+                                <div class="invalid-feedback">
+                                    Por favor, escribe tu mensaje.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-danger px-4">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="faq" class="py-5 bg-dark" data-bs-theme="dark"> <div class="container">
+            <h2 class="text-center mb-5 display-5 text-white">Preguntas Frecuentes
+                <span class="text-danger">Intergalácticas</span> (PFI)
+            </h2>
+            <div class="accordion accordion-flush" id="faqAccordion">
+                <div class="col-lg-8 mx-auto"> <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                ¿Qué tan "leales" son estas unidades? ¿Hay riesgo de rebelión?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Nuestros modelos vienen con inhibidores de voluntad de triple redundancia y protocolos
+                                de obediencia de Nivel Gamma. La probabilidad de una insurrección coordinada es de
+                                0.00037% por ciclo marciano. Los modelos Floopy son particularmente dóciles. Consulte la
+                                cláusula 7.4 del contrato.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mt-2"> <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                ¿Necesitan atmósfera terrestre o pueden operar en el vacío marciano?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Los modelos Xylar-7 y K'Reel están bio-diseñados para operar en condiciones de baja
+                                presión y temperaturas extremas. Requieren recargas de oxígeno cada 12 horas si están en
+                                exposición directa al vacío. El modelo Floopy es estrictamente para interiores
+                                presurizados.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mt-2">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                ¿Ofrecen paquetes de "persuasión avanzada" o "reeducación" si una unidad se vuelve...
+                                problemática?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Disponemos de varios "Paquetes de Optimización Comportamental" y unidades especializadas
+                                en "Reajuste de Lealtad". Póngase en contacto con nuestro departamento de Post-Venta
+                                para discutir opciones discretas. Recuerde, el uso de campos de energía disruptiva anula
+                                la garantía motriz.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-custom py-4 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-md-start">
+                    <p class="mb-0">&copy; 2025 Martian Cosmic Servitude. Marte, Sistema Solar.</p>
+                    <p class="small">"Su obediencia es nuestra especialidad."</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-alien-accent me-2"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="text-alien-accent me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="mailto:ventas@martiancosmicservitude.null" class="text-alien-accent"><i
+                            class="bi bi-envelope-at-fill"></i> Contacto Encriptado</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script> </body>
+
 </html>

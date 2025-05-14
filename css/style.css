@@ -1,46 +1,141 @@
-/* styles.css */
+
+/* Paleta de Colores Personalizada */
+:root {
+    --martian-red: #D73A1F;
+    --martian-red-rgb: 215, 58, 31; /* Para usar con rgba() */
+    --space-dark: #2C3E50; /* Azul oscuro espacial */
+    --alien-accent: #2ECC71; /* Un verde alienígena o un azul eléctrico */
+    --text-light: #FDFEFE;
+    --text-muted-light: #bdc3c7;
+    --dark-bg: #1C1C1C; /* Fondo muy oscuro */
+    --card-bg: #2f3136; /* Un gris oscuro para las tarjetas */
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ff0000;
+    font-family: Arial, sans-serif; /* Puedes ajustarlo si Bootstrap lo anula y prefieres este */
+    padding-top: 56px; /* Ajuste para el navbar fijo. La altura de tu navbar puede variar. */
+    background-color: var(--dark-bg); /* Fondo general oscuro para la temática */
+    color: var(--text-light); /* Texto general claro */
 }
 
-/* 1. Definimos el grid en el contenedor */
-.container {
-    display: grid;
-    /* activa el modo Grid Layout */
-    grid-template-columns: auto 500px 50px 50px 50px;
-    grid-template-rows: auto auto auto;
-    /* 3 filas cuya altura se ajusta al contenido */
-
-    /* 2. Nombramos bloques de área para luego asignarlos fácilmente */
-    grid-template-areas:
-        "header header header header header"
-        "main   main   main   sidebar sidebar"
-        "footer footer footer footer footer";
-
-    gap: 10px;/* espacio entre filas/columnas */
-    background-color: lightseagreen;
+/* Clase para aplicar el color --text-muted-light */
+.text-muted-light {
+    color: var(--text-muted-light) !important; /* !important si es necesario para anular otros estilos */
 }
 
-/* 3. Asignamos a cada elemento hijo la zona que le corresponde */
-.item-a {
-    grid-area: header;
-    background-color: tan;
+/* Clases de color personalizadas utilizadas */
+.text-alien-accent { color: var(--alien-accent) !important; }
+.text-alien-first { color: var(--text-light) !important; } /* Asumiendo que quieres texto claro, podrías usar una variable más específica si es necesario */
+
+
+/* Estilos para componentes específicos */
+.navbar-custom {
+    background-color: rgba(28, 28, 28, 0.85); /* Navbar semi-transparente y oscuro */
+    backdrop-filter: blur(5px); /* Efecto blur si quieres */
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: var(--text-light);
+}
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+    color: var(--martian-red);
 }
 
-.item-b {
-    grid-area: main;
-    background-color: aqua;
+/* Cambia el color del icono del toggler por un color claro */
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28253, 254, 254, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); 
 }
 
-.item-c {
-    grid-area: sidebar;
-    background-color: lightgreen;
+
+/* Estilos para la sección Hero */
+#hero {
+    color: var(--text-light);
+    /* min-height: 80vh; */ /* Puedes mantener o ajustar esto según necesites */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.item-d {
-    grid-area: footer;
-    background-color: lightcoral;
+/* Contenedor del video de fondo */
+.video-background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Detrás del contenido del hero */
+    overflow: hidden; /* Asegura que el video no se desborde */
+}
+
+#heroVideo {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto; /* Mantiene la proporción del video */
+    height: auto; /* Mantiene la proporción del video */
+    position: absolute; /* Posiciona el video dentro del contenedor */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el video */
+    object-fit: cover; /* Asegura que el video cubra todo el espacio, recortando si es necesario */
+}
+
+/* El overlay para el contenido del Hero, asegúrate que está por encima */
+#hero .overlay {
+    background-color: rgba(0,0,0, 0.6); /* Overlay oscuro para legibilidad del texto sobre el video */
+    padding: 3rem;
+    border-radius: 0.5rem;
+    position: relative; /* Para que el z-index funcione correctamente */
+    z-index: 1; /* Encima del video */
+}
+
+
+#features {
+    background-color: var(--dark-bg); /* O un gris ligeramente más claro que el body */
+}
+#features .card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--space-dark);
+    color: var(--text-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#features .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(var(--martian-red-rgb), 0.3); /* Usando la variable RGB */
+}
+#features .card-title {
+    color: var(--alien-accent);
+}
+
+.image-feature {
+    height:200px;
+    object-fit: cover;
+}
+
+
+#contact label {
+    color: var(--text-muted-light);
+}
+#contact .form-control {
+    background-color: var(--card-bg);
+    border: 1px solid var(--space-dark);
+    color: var(--text-light);
+}
+#contact .form-control:focus {
+    background-color: var(--card-bg);
+    border-color: var(--martian-red);
+    color: var(--text-light);
+    box-shadow: 0 0 0 0.25rem rgba(var(--martian-red-rgb), 0.25); /* Usando la variable RGB */
+}
+
+
+.footer-custom {
+    background-color: #111; /* Footer bien oscuro */
+    color: var(--text-muted-light);
+}
+.footer-custom a {
+    color: var(--alien-accent);
+}
+.footer-custom a:hover {
+    color: var(--martian-red);
 }
