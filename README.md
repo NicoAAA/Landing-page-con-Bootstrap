@@ -41,8 +41,14 @@ Esta landing page sirve como el principal punto de información para clientes po
 Para ver una demostración del proyecto:
 1.  Clona o descarga este repositorio.
 2.  Abre el archivo `index.html` en tu navegador web preferido.
+![image](https://github.com/user-attachments/assets/b304e01e-2a6d-40d5-b420-701ae99e207a)
+![image](https://github.com/user-attachments/assets/c4311110-15a7-48bb-89dd-ce85a0000356)
+![image](https://github.com/user-attachments/assets/7c8de9b7-4fe3-41e2-bc2b-41c2ad8a3251)
 
-*(Opcional: Si tienes el sitio desplegado, puedes poner un enlace aquí: `[Ver Demo en Vivo](https://tu-url-de-demo.com)`)*
+
+
+
+Puedes acceder a el sitio con este link `https://landing-page-con-bootstrap.vercel.app/#faq`
 
 ## Tecnologías Utilizadas
 
