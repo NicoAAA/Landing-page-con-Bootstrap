@@ -44,12 +44,32 @@ Para ver una demostración del proyecto:
 ![image](https://github.com/user-attachments/assets/b304e01e-2a6d-40d5-b420-701ae99e207a)
 ![image](https://github.com/user-attachments/assets/c4311110-15a7-48bb-89dd-ce85a0000356)
 ![image](https://github.com/user-attachments/assets/7c8de9b7-4fe3-41e2-bc2b-41c2ad8a3251)
-
-
-
-
 Puedes acceder a el sitio con este link `https://landing-page-con-bootstrap.vercel.app/#faq`
+## Instalación y Visualización
 
+No se requiere un proceso de instalación complejo ya que es un sitio web estático.
+
+1.  **Clona el repositorio (si está en Git):**
+    ```bash
+    git clone [https://tu-repositorio-git.com/esclavosmarcianos.git](https://tu-repositorio-git.com/esclavosmarcianos.git)
+    cd esclavosmarcianos
+    ```
+    O **descarga los archivos del proyecto** y descomprímelos en una carpeta local.
+
+2.  **Asegúrate de que la estructura de carpetas se mantenga** como se describe en [Estructura del Proyecto](#estructura-del-proyecto) para que las rutas a los assets (CSS, JS, imágenes, fuentes) funcionen correctamente.
+
+3.  **Abre `index.html` en tu navegador web:**
+    Haz doble clic en el archivo `index.html` o arrástralo a la ventana de tu navegador.
+
+## Uso
+
+Navega por la página utilizando la barra de navegación superior para acceder a las diferentes secciones:
+* **Inicio:** Sección hero con video.
+* **Modelos:** Visualiza los diferentes tipos de sirvientes alienígenas disponibles.
+* **Adquisiciones:** Utiliza el formulario de contacto para enviar consultas. (Nota: El envío de formularios no está funcionalmente implementado en el backend en esta versión).
+* **PFI (FAQ):** Consulta las preguntas frecuentes sobre los servicios.
+
+  
 ## Tecnologías Utilizadas
 
 * **HTML5:** Para la estructura semántica del contenido.
@@ -61,4 +81,17 @@ Puedes acceder a el sitio con este link `https://landing-page-con-bootstrap.verc
 * **Bootstrap Icons v1.10.3 (local):** Para la iconografía utilizada en la página.
 * **JavaScript:** Principalmente a través de Bootstrap para la interactividad de los componentes (navbar, acordeón, etc.).
 
-## Estructura del Proyecto
+## Créditos y Recursos
+
+* **Bootstrap:** [getbootstrap.com](https://getbootstrap.com/)
+* **Bootstrap Icons:** [icons.getbootstrap.com](https://icons.getbootstrap.com/)
+* Imágenes y videos: *(Especificar origen si es necesario, ej: "Imágenes generadas/Placeholder")*
+
+## Licencia
+
+Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles (si decides añadir uno).
+De momento, considera los derechos reservados o especifica una licencia abierta como MIT si es tu intención.
+
+---
+
+*Creado con fines demostrativos y de entretenimiento. ¡Que la obediencia intergaláctica te acompañe!*
