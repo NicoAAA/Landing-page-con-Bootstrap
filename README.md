@@ -51,12 +51,11 @@ No se requiere un proceso de instalación complejo ya que es un sitio web estát
 
 1.  **Clona el repositorio (si está en Git):**
     ```bash
-    git clone [https://tu-repositorio-git.com/esclavosmarcianos.git](https://tu-repositorio-git.com/esclavosmarcianos.git)
-    cd esclavosmarcianos
+    git clone [https://github.com/NicoAAA/Landing-page-con-Bootstrap]
     ```
     O **descarga los archivos del proyecto** y descomprímelos en una carpeta local.
 
-2.  **Asegúrate de que la estructura de carpetas se mantenga** como se describe en [Estructura del Proyecto](#estructura-del-proyecto) para que las rutas a los assets (CSS, JS, imágenes, fuentes) funcionen correctamente.
+2.  **Asegúrate de que la estructura de carpetas se mantenga**  para que las rutas a los assets (CSS, JS, imágenes, fuentes) funcionen correctamente.
 
 3.  **Abre `index.html` en tu navegador web:**
     Haz doble clic en el archivo `index.html` o arrástralo a la ventana de tu navegador.
